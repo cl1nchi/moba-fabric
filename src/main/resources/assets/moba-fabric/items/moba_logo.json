@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "moba-fabric:item/moba_logo"
+  }
+}
