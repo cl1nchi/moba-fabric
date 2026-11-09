@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "moba-fabric",
+	"version": "${version}",
+	"name": "Moba Fabric",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/moba-fabric/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.cl1nchi.mobafabric.MobaFabric"
+		],
+		"client": [
+			"io.github.cl1nchi.mobafabric.client.MobaFabricClient"
+		]
+	},
+	"mixins": [
+		"moba-fabric.mixins.json",
+		{
+			"config": "moba-fabric.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
