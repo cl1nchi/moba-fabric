@@ -22,6 +22,7 @@ public class MobaFabric implements ModInitializer {
 		// Proceed with mild caution.
 
 		ModItems.initialize();
+		ModItemGroups.initialize();
 		LOGGER.info("MOBA FABRIC has been successfully launched!");
 	}
 
